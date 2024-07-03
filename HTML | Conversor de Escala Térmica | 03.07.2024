@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Conversor_de_escala_termica.css">
+    <title>Conversores de Escala</title>
+</head>
+<body>
+    <div>    
+        <div class="alinhamento_do_conteudo">
+            <div class="tabela">
+                <div class="titulo">
+                    <h1>Conversores de Escala</h1>
+                    <p>Digite o primeiro valor, no caso o valor que você possui;</p>
+                    <p>Já o segundo valor é o valor que você gostária de saber, no caso o valor a ser convertido;</p>
+                </div>
+                
+                <div class="alinhamento_da_tabela">
+                    <div class="tabela_toda">
+                        <div class="tabela_um">
+                            <label>
+                                
+                                <input id="inpt_num_um" value="0">
+                                <br>
+                                <select id="slct_escolha_de_conversor_de_temperatura_um">
+                                    <option value="Celsius">Grau Celsius</option>
+                                    <option value="Fahrenheit">Grau Fahrenheit</option>
+                                    <option value="Kelvin">Grau Kelvin</option>
+                                </select>
+                            </label>
+                        </div>
+                        <p>=</p>
+                        <div class="tabela_dois">
+                            <label>
+                                <input id="inpt_num_dois" value="0">
+                                <br>
+                                <select id="slct_escolha_de_conversor_de_temperatura_dois">
+                                    <option value="Fahrenheit">Grau Fahrenheit</option>
+                                    <option value="Celsius">Grau Celsius</option>
+                                    <option value="Kelvin">Grau Kelvin</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="div-botao">
+                    <br>
+                    <br>
+                    <button onclick="call_functions()" class="botao">Calcular</button>
+                </div>
+                <div id="formula"></div>
+            </div>
+    </div>
+<script src="Conversor_de_escala_termica.js"></script>
+</body>
+</html>
